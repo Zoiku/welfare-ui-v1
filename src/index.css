@@ -1,0 +1,57 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-black-1: #24252a;
+  --bg-gray-1: rgba(216, 219, 224, 0.1);
+  --bg-gray-2: rgba(216, 219, 224, 0.2);
+  --bg-gray-3: rgba(216, 219, 224, 0.3);
+  --bg-gray-4: rgba(216, 219, 224, 0.4);
+  --bg-gray-5: rgba(216, 219, 224, 0.5);
+  --bg-gray-6: rgba(216, 219, 224, 0.6);
+  --bg-gray-7: rgba(216, 219, 224, 0.7);
+  --bg-gray-8: rgba(216, 219, 224, 0.8);
+  --bg-gray-9: rgba(216, 219, 224, 0.9);
+  --bg-gray-10: rgba(216, 219, 224, 1);
+  --bg-green-1: rgba(78, 167, 53, 0.1);
+  --bg-green-2: rgba(78, 167, 53, 0.2);
+  --bg-green-3: rgba(78, 167, 53, 0.3);
+  --bg-green-4: rgba(78, 167, 53, 0.4);
+  --bg-green-5: rgba(78, 167, 53, 0.5);
+  --bg-green-6: rgba(78, 167, 53, 0.6);
+  --bg-green-7: rgba(78, 167, 53, 0.7);
+  --bg-green-8: rgba(78, 167, 53, 0.8);
+  --bg-green-9: rgba(78, 167, 53, 0.9);
+  --bg-green-10: rgba(78, 167, 53, 1);
+  --bg-red-1: rgba(205, 0, 0, 0.1);
+  --bg-red-2: rgba(205, 0, 0, 0.2);
+  --bg-red-3: rgba(205, 0, 0, 0.3);
+  --bg-red-4: rgba(205, 0, 0, 0.4);
+  --bg-red-5: rgba(205, 0, 0, 0.5);
+  --bg-red-6: rgba(205, 0, 0, 0.6);
+  --bg-red-7: rgba(205, 0, 0, 0.7);
+  --bg-red-8: rgba(205, 0, 0, 0.8);
+  --bg-red-9: rgba(205, 0, 0, 0.9);
+  --bg-red-10: rgba(205, 0, 0, 1);
+}
+
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-view {
+    display: block;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+}

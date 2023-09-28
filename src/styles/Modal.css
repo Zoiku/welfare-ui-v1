@@ -1,0 +1,26 @@
+.modal-close-button {
+  height: 20px;
+  width: 20px;
+  background: var(--bg-red-8);
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  border-radius: 50%;
+  color: white;
+  padding: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.modal-close-button:hover {
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-component {
+    width: 90% !important;
+  }
+}

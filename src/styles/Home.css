@@ -1,0 +1,13 @@
+.centered-home-section-title {
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+}
+
+.centered-home-section-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}

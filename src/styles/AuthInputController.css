@@ -1,0 +1,50 @@
+.auth-input-controller > div:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.auth-input-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+}
+
+.auth-input-label-text {
+  color: var(--bg-black-1);
+}
+
+.auth-input-label-helper {
+  color: gray;
+  cursor: pointer;
+}
+
+.auth-input-label-helper:hover {
+  text-decoration: underline;
+}
+
+.auth-duo-input-controller {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.auth-duo-input-controller > div {
+  width: 50%;
+}
+
+.country-auth-input-controller-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-auth-input-flag-image {
+  height: 20px;
+  width: 30px;
+  border-radius: 5px;
+  overflow: clip;
+}
+
+.country-auth-input-flag-image img {
+  height: 100%;
+  width: 100%;
+}

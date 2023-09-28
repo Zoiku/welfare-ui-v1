@@ -1,0 +1,20 @@
+.menu-item {
+  padding: 10px !important;
+  border-radius: 5px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  font-size: smaller !important;
+  font-weight: 600 !important;
+}
+
+.menu-item-selected {
+  background: var(--bg-green-3) !important;
+}
+
+.menu-item:hover {
+  background: var(--bg-green-1);
+}
+
+.menu-item:not(:last-child) {
+  margin-bottom: 5px;
+}

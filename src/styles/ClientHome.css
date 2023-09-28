@@ -1,0 +1,248 @@
+.client-home-page-inner {
+  height: 100%;
+}
+
+.client-home-page-inner > div:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.dashboad-sections > div:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.client-home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.client-home-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+.client-home-section-title-text {
+  font-size: large;
+  color: var(--bg-black-1);
+}
+
+.client-home-section-title-helper {
+  color: var(--bg-green-10);
+  font-size: smaller;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.campaign-of-the-day-card {
+  border: 1px solid var(--bg-gray-10);
+  border-radius: 10px;
+  overflow: clip;
+  display: flex;
+  justify-content: space-between;
+}
+
+.campaign-of-the-day-card-inner {
+  width: 50%;
+}
+
+.campaign-of-the-day-card-image {
+  height: 300px;
+  overflow: clip;
+}
+
+.campaign-of-the-day-card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.campaign-of-the-day-card-title {
+  border-bottom: 1px solid var(--bg-gray-10);
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.campaign-of-the-day-card-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.campaign-of-the-day-card-body-inner {
+  height: 100%;
+  padding: 20px;
+}
+
+.campaign-of-the-day-card-body-inner > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.campaign-of-the-day-about-title {
+  font-size: smaller;
+}
+
+.campaign-of-the-day-about-owner {
+  font-size: small;
+  font-weight: 500;
+  color: var(--bg-black-1);
+}
+
+.campaign-of-the-day-about-body {
+  color: gray;
+  font-size: small;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.campaign-of-the-day-progress {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  font-size: small;
+}
+
+.welfare-categories {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.welfare-categories:hover .welfare-category:not(:hover) {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.welfare-category {
+  background: var(--bg-green-1);
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 0.2s ease;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.welfare-category:hover {
+  border: 2px solid var(--bg-green-10);
+}
+
+.welfare-category > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.welfare-category-image {
+  height: 150px;
+}
+
+.welfare-category-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.welfare-category-label {
+  font-size: small;
+  font-weight: 700;
+  text-align: center;
+}
+
+.campaign-cards:hover .campaign-card:not(:hover) {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.trending-cards .campaign-card {
+  width: 300px;
+}
+
+.campaign-card {
+  border: 1px solid var(--bg-gray-8);
+  overflow: clip;
+  transition: all 0.3s ease;
+  font-size: small;
+}
+
+.campaign-card-image {
+  height: 150px;
+}
+
+.campaign-card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.campaign-card-body-title {
+  font-weight: 600;
+}
+
+.campaign-card-body {
+  padding: 10px;
+}
+
+.campaign-card-body > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.campaign-card-body-owner {
+  color: gray;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .campaign-of-the-day-card {
+    border: none;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .campaign-of-the-day-card-inner {
+    width: 100%;
+  }
+
+  .campaign-of-the-day-card-image {
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .campaign-of-the-day-card-title {
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .campaign-of-the-day-card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    border: 1px solid var(--bg-gray-10);
+  }
+
+  .campaign-of-the-day-card-body-inner {
+    padding: 10px;
+  }
+
+  .campaign-of-the-day-progress {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .welfare-category-image {
+    height: 50px;
+  }
+
+  .welfare-category-label {
+    font-size: 8px;
+  }
+
+  .welfare-category > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

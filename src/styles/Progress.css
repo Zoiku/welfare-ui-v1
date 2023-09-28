@@ -1,0 +1,35 @@
+.progress-container {
+  font-size: inherit;
+  color: gray;
+}
+
+.progress-container .black-key {
+  font-weight: 500;
+  color: var(--bg-black-1);
+}
+
+.progress-container .green-key {
+  font-weight: 600;
+  color: var(--bg-green-10);
+}
+
+.progress-container > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.progress-bar-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-bar-footer-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.progress-bar-footer-item-icon {
+  display: grid;
+  place-content: center;
+}

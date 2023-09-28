@@ -1,0 +1,136 @@
+.auth-page {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+}
+
+.auth-page-inner {
+  position: relative;
+  width: 50%;
+}
+
+.auth-page-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-green-1);
+  overflow: clip;
+}
+
+.auth-overlay-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -300px;
+}
+
+.auth-overlay-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+.auth-right-container {
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.auth-left-container {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-meta {
+  width: 70%;
+  margin: 100px 0;
+}
+
+.auth-meta-inner > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.auth-meta-title {
+  font-size: xx-large;
+}
+
+.auth-meta-details > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.auth-meta-details-list {
+  list-style-position: inside;
+  color: gray;
+  font-weight: 400;
+  font-size: smaller;
+}
+
+.auth-meta-details-list li {
+  list-style-type: "- ";
+}
+
+.auth-meta-details-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.auth-meta-call-to-action {
+  font-size: smaller;
+  font-weight: 600;
+}
+
+.auth-form {
+  width: 50%;
+  height: 400px;
+  margin-top: 100px;
+}
+
+.auth-form > div:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.auth-form-title > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.auth-form-title-text {
+  font-size: xx-large;
+  color: var(--bg-black);
+}
+
+.auth-form-title-text-helper {
+  font-size: small;
+  font-weight: 500;
+  color: gray;
+}
+
+.auth-form-title-text-helper .key {
+  cursor: pointer;
+  color: var(--bg-green-10);
+}
+
+.auth-form-body > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .auth-page {
+    height: 100%;
+  }
+
+  .auth-left-container {
+    display: none;
+  }
+
+  .auth-right-container {
+    width: 100%;
+  }
+
+  .auth-form {
+    width: 90%;
+    height: 100%;
+  }
+}

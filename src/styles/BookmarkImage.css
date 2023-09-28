@@ -1,0 +1,30 @@
+.book-mark-image-component {
+  height: 100%;
+  position: relative;
+  overflow: clip;
+}
+
+.book-mark-icon {
+  position: absolute !important;
+  top: -50px;
+  transition: all 0.3s ease !important;
+  left: 10px;
+  color: white !important;
+  border: 2px solid var(--bg-gray-5) !important;
+}
+
+.book-mark-image-component:hover .book-mark-icon {
+  top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .book-mark-icon {
+    top: 10px;
+    left: 10px;
+    font-size: small !important;
+  }
+
+  .book-mark-image-component:hover .book-mark-icon {
+    top: 10px;
+  }
+}

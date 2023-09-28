@@ -1,0 +1,19 @@
+.client-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 20;
+}
+
+.client-nav-inner {
+  text-align: center;
+  font-size: smaller;
+  text-transform: capitalize;
+  font-weight: 500;
+}

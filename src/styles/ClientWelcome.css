@@ -1,0 +1,22 @@
+.client-welcome {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.client-welcome-mobile-avartar {
+  width: 50px !important;
+  height: 50px !important;
+  background: var(--bg-green-10) !important;
+}
+
+.client-welcome-helper {
+  font-weight: 600;
+  color: var(--bg-green-10);
+}
+
+.client-welcome-text {
+  font-size: xx-large;
+  font-weight: 700;
+}

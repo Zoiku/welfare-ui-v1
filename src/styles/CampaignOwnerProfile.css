@@ -1,0 +1,114 @@
+.campaign-owner-profile-page > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.campaign-owner-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.campaign-owner-avatar {
+  height: 110px !important;
+  width: 110px !important;
+  font-size: xxx-large !important;
+}
+
+.campaign-owner-meta > div:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.campaign-owner-name-checkmark {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.campaign-owner-name-checkmark > span {
+  display: flex;
+  align-content: center;
+}
+
+.campaign-owner-name {
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.campaign-owner-checkmark-svg {
+  height: 15px !important;
+  width: 15px !important;
+  filter: grayscale(100%);
+}
+
+.campaign-owner-account-type {
+  font-size: smaller;
+  font-weight: 600;
+  color: var(--bg-green-10);
+}
+
+.campaign-owner-location {
+  color: gray;
+  font-weight: 500;
+  font-size: smaller;
+}
+
+.campaign-owner-dasboard-items {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.campaign-owner-dasboard-items:hover
+  .campaign-owner-dashboard-item:not(:hover) {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.campaign-owner-dashboard-item {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.campaign-owner-dashboard-icon-container {
+  display: grid;
+  place-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  background: var(--bg-green-1);
+}
+
+.campaign-owner-dashboard-icon {
+  width: 40px !important;
+  height: 40px !important;
+  color: var(--bg-green-10);
+}
+
+.campaign-owner-dashboard-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campaign-owner-dashboard-meta-label {
+  font-size: small;
+  color: gray;
+}
+
+.campaign-owner-dashboard-meta-value {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .campaign-owner-dashboard-icon {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .campaign-owner-dashboard-meta-value {
+    font-size: xxx-large;
+  }
+}
